@@ -1,4 +1,4 @@
-# Python Learning Journey
+# Python Review
 
 Documenting my path from Python beginner to advanced, building toward 
 Data Analytics / ML / AI roles in FinTech.
