@@ -48,6 +48,5 @@ print(ticker)
 
 tickers = ["AAPL", "MSFT", "GOOG", "AMZN"]
 quoted = [f'"{t}"' for t in tickers]
-
 result = ", ".join(quoted)
 print(result)
