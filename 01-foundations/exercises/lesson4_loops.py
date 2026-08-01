@@ -81,6 +81,7 @@ print(f"Took {years} years to exceed 10000 as {investment:.2f}")
 """
 #What happens when you run this? Explain why in a comment, and fix it.
 
+# Count starts at 0 and the while-condition (count < len(prices)) stays True forever
 # The loop will iterate without stopping. Because there is no accumulator in the loop to add up each loop, the count always stays at 0. 
 # To fix the issue, count +=1 was added to accumulate the loop iterations 
 
