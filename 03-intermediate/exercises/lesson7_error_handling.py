@@ -116,4 +116,3 @@ print(get_stock_price("MSFT"))
 
 #The explanation for why using a bare except is bad practice is that it catches all exceptions, including those that you might not expect or want to catch (like KeyboardInterrupt, SystemExit, etc.).
 #This can make debugging difficult because it hides the actual error and can lead to unexpected behavior. By catching specific exceptions (like KeyError in this case), you can handle only the errors you anticipate and allow other exceptions to propagate normally.
-
