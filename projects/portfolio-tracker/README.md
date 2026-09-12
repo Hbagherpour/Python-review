@@ -1,15 +1,16 @@
-Portfolio Tracker
+# Portfolio Tracker
 
 A small object-oriented Python project that models a stock portfolio. It demonstrates core OOP concepts — encapsulation, dunder methods (__str__, __repr__, __eq__, __lt__, __len__), custom exception handling, and using built-ins like max() and sorted() with user-defined comparison logic. Built as a hands-on exercise in designing clean, testable Python classes for a finance-flavored domain.
 
-Project Structure
+## Project Structure
 portfolio-tracker/
 ├── stock.py        # Stock class — represents a single equity position
 ├── portfolio.py     # Portfolio class — a collection of Stock holdings
 ├── main.py          # Demo script showing the classes in action
 └── README.md
-Features
-stock.py — Stock
+
+## Features
+### stock.py — Stock
 
 Represents a single stock holding.
 
@@ -19,7 +20,8 @@ update_price(new_price) — updates the price; raises ValueError if new_price <=
 __str__ / __repr__ — human-readable and developer-friendly representations
 __eq__ — compares two stocks by position_value()
 __lt__ — compares two stocks by position_value(), enabling sorting and max()
-portfolio.py — Portfolio
+
+### portfolio.py — Portfolio
 
 Represents a collection of stock holdings.
 
@@ -30,7 +32,8 @@ total_value() — sums position_value() across all holdings
 best_performer() — returns the highest-value holding using max(), powered by Stock.__lt__
 __len__ — number of holdings
 __str__ — readable summary, e.g. Portfolio (3 holdings, total value: $12,450.00)
-main.py — Demo
+
+### main.py — Demo
 
 Ties the two classes together:
 

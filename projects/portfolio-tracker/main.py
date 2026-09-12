@@ -23,13 +23,13 @@ print(f"Number of holdings: {len(portfolio)}")
 print(f"Best performer: {portfolio.best_performer()}")
 
 try:
-    portfolio._holdings[0].update_price(-150.00)
+    portfolio.get_holdings()[0].update_price(-150.00)
 except ValueError as e:
     print(f"Error updating stock price: {e}")
 
 
 portfolio.remove_stock("NONEXISTENT")
 
-sorted_holdings = sorted(portfolio._holdings, key=lambda stock: stock.position_value(), reverse=True)
+sorted_holdings = sorted(portfolio.get_holdings(), reverse=True)
 for stock in sorted_holdings:
     print(f"{stock.ticker}: ${stock.position_value():.2f}")

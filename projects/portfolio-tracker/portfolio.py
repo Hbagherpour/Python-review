@@ -29,6 +29,8 @@ class Portfolio:
         if not self._holdings:
             return None
         return max(self._holdings, key=lambda stock: stock.position_value())
+    def get_holdings(self):
+        return list(self._holdings)
     def __len__(self):
         return len(self._holdings)
     def __str__(self):

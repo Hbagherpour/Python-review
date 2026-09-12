@@ -35,10 +35,10 @@ class Stock:
             return self.position_value() < other.position_value()
         return NotImplemented
 
-APPL = Stock("AAPL", 150.00, 10)
-print(APPL)
-APPL.update_price(155.00)
-print(APPL)
+AAPL = Stock("AAPL", 150.00, 10)
+print(AAPL)
+AAPL.update_price(155.00)
+print(AAPL)
 
 GOOG = Stock("GOOG", 2800.00, 5)
 print(GOOG)
@@ -49,10 +49,10 @@ try:
 except ValueError as e:
     print(f"Failed to update price: {e}")  # This will raise a ValueError
 print(GOOG)
-print(APPL == GOOG)  # False
-print(APPL < GOOG)   # True
-print(APPL > GOOG)   # False
-print(APPL == Stock("AAPL", 155.00, 10))  # True
-print(APPL < Stock("AAPL", 155.00, 10))   # False
-print(APPL > Stock("AAPL", 155.00, 10))   # False
-print(APPL.__repr__())  # Stock(ticker='AAPL', price=155.0, shares=10)
+print(AAPL == GOOG)  # False
+print(AAPL < GOOG)   # True
+print(AAPL > GOOG)   # False
+print(AAPL == Stock("AAPL", 155.00, 10))  # True
+print(AAPL < Stock("AAPL", 155.00, 10))   # False
+print(AAPL > Stock("AAPL", 155.00, 10))   # False
+print(AAPL.__repr__())  # Stock(ticker='AAPL', price=155.0, shares=10)
