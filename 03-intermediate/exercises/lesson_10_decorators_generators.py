@@ -111,13 +111,16 @@ with timer():
 
 
 #Exercise 7: Bug hunt:
-#def get_prices():
-#       yield 100
-#       yield 200
-#       yield 300
+    """
+   def get_prices():
+       yield 100
+       yield 200
+       yield 300
 
-#   prices = get_prices()
-#   print(prices[0])
+   prices = get_prices()
+   print(prices[0])
+  
+    """
 
 #What happens when you run this, and why? (Hint: think about what type get_prices() actually returns, and what operations that type does and doesn't support.)
 #Fix it to correctly get the first value.
