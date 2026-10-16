@@ -1,0 +1,8 @@
+{
+  "name": "My list",
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "GOOG"
+  ]
+}
