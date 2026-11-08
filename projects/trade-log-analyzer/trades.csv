@@ -1,0 +1,8 @@
+ticker,side,price,quantity
+AAPL,buy,150.00,10
+GOOGL,sell,2800.00,5
+MSFT,buy,300.00,20
+TSLA,sell,700.00,15
+AMZN,buy,3300.00,8
+NVDA,abc,400.00,12
+TSLA,buy,abc,5
