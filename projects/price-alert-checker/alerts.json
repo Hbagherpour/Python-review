@@ -1,0 +1,34 @@
+{
+  "alerts": [
+    {
+      "base": "USD",
+      "target": "EUR",
+      "condition": "above",
+      "threshold": 0.90
+    },
+    {
+      "base": "USD",
+      "target": "GBP",
+      "condition": "below",
+      "threshold": 0.76
+    },
+    {
+      "base": "EUR",
+      "target": "JPY",
+      "condition": "above",
+      "threshold": 160
+    },
+    {
+      "base": "USD",
+      "target": "CHF",
+      "condition": "sideways",
+      "threshold": 0.85
+    },
+    {
+      "base": "USD",
+      "target": "JPY",
+      "condition": "above",
+      "threshold": "abc"
+    }
+  ]
+}
