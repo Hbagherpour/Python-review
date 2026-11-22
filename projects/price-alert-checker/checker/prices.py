@@ -1,12 +1,3 @@
-#write get_rate(base, target) -> float | None. Use requests with a timeout, raise_for_status(), and catch requests.exceptions.RequestException. On any failure, log an error and return None.
-#It should:
-#call https://api.frankfurter.dev/v1/latest with params={"base": base, "symbols": target} and timeout=10
-#call raise_for_status()
-#return data["rates"][target]
-#on any requests.exceptions.RequestException, log an error with the reason and return None
-#handle a missing rate in the response (KeyError) the same way
-#Use logger = logging.getLogger(__name__) and no basicConfig.
-
 import logging
 import requests
 
